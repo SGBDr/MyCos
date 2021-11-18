@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="520.0" spacing="5.0" style="-fx-cursor: hand; -fx-background-color: rgba(255,255,255,0); -fx-border-color: white; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label style="-fx-opacity: 1.5;" text="Nom :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: white;" text="Nom" wrappingWidth="159.13671875">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label style="-fx-opacity: 1;" text="Qte :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="quantity" strokeType="OUTSIDE" strokeWidth="0.0" text="Qantité" wrappingWidth="108.2578125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label style="-fx-opacity: 1;" text="Prix :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Text fx:id="price" strokeType="OUTSIDE" strokeWidth="0.0" text="price" wrappingWidth="120.951171875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</HBox>

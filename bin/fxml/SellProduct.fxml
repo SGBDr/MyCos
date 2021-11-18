@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="461.0" prefWidth="463.0" style="-fx-border-color: rgb(255,255,255); -fx-border-width: 0.5px; -fx-background-color: rgba(12, 15, 45, 0.5);">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Panier De Vente">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ScrollPane prefHeight="308.0" prefWidth="453.0" style="-fx-background-color: transparent;">
+               <content>
+                  <VBox fx:id="ListS" prefHeight="306.0" prefWidth="450.0" style="-fx-background-color: rgba(12, 15, 45, 0.8);" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" prefHeight="95.0" prefWidth="453.0" spacing="40.0" style="-fx-background-color: transparent;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Sell" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: black;" text="Vente Facturée" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="461.0" prefWidth="548.0" style="-fx-border-width: 0.5px; -fx-border-color: white; -fx-background-color: rgba(12, 15, 45, 0.5);">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendre Un Produit">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="search" onKeyPressed="#UpdateView" prefHeight="25.0" prefWidth="524.0" promptText="Rechercher Un Produit" style="-fx-border-radius: 50px;">
+               <VBox.margin>
+                  <Insets left="5.0" right="30.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </TextField>
+            <ScrollPane prefHeight="394.0" prefWidth="542.0" style="-fx-background-color: transparent;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <content>
+                  <VBox fx:id="ListP" alignment="TOP_CENTER" prefHeight="387.0" prefWidth="533.0" spacing="5.0" style="-fx-background-color: rgba(12, 15, 45, 0.5);">
+                     <padding>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

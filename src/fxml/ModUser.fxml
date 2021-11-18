@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="59.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="216.0" layoutY="52.0" promptText="Nom d'utilisateur" />
+      <TextField fx:id="state" layoutX="216.0" layoutY="103.0" prefHeight="25.0" prefWidth="91.0" promptText="0 . . . 1 . . . 2" />
+      <Text layoutX="128.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 - Vendeur">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="208.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 - Gestion Stock" />
+      <Text layoutX="313.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 - Super utilisateur" />
+      <Text layoutX="59.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot De Passe : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mdp" layoutX="216.0" layoutY="179.0" promptText="* * * * * * " />
+      <Button layoutX="339.0" layoutY="241.0" mnemonicParsing="false" onAction="#Valider" style="-fx-background-color: black;" text="Valider" textFill="WHITE" />
+      <Button layoutX="102.0" layoutY="241.0" mnemonicParsing="false" onAction="#Exit" style="-fx-background-color: black;" text="Annuler" textFill="WHITE" />
+      <Text fill="#e11d1d" layoutX="36.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laisser tel quelle si vous ne souhaitez rien changer">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

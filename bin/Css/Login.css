@@ -1,0 +1,19 @@
+#bg{
+	-fx-background-image : url('../images/rr.jpg');
+	-fx-background-size : 100% 100%;
+}
+
+#connect{
+	-fx-background-color: white;
+}
+
+#connect:hover{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+}
+
+#users, #pwd{
+	-fx-text-fill : white;
+}
+

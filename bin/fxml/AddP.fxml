@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Produit Existant">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="eNom" layoutX="25.0" layoutY="14.0" onInputMethodTextChanged="#UpdateView" onKeyTyped="#UpdateView" prefHeight="25.0" prefWidth="401.0" promptText="Le nom Du Produit" />
+                  <ScrollPane layoutX="25.0" layoutY="46.0" prefHeight="222.0" prefWidth="551.0">
+                     <content>
+                        <VBox fx:id="eProduct" prefHeight="219.0" prefWidth="546.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button layoutX="204.0" layoutY="305.0" mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="192.0" style="-fx-background-color: black;" text="Fermer" textFill="#fcf9f9" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Nouveau Produit">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-image: url('../images/rr.jpg');">
+               <children>
+                  <Label layoutX="22.0" layoutY="14.0" text="Nom du produit : " />
+                  <Label layoutX="20.0" layoutY="53.0" prefHeight="17.0" prefWidth="63.0" text="Catégorie :" />
+                  <ComboBox fx:id="pCategory" layoutX="140.0" layoutY="49.0" prefWidth="150.0" promptText="M P Q" />
+                  <TextField fx:id="pNom" layoutX="140.0" layoutY="10.0" prefHeight="25.0" prefWidth="199.0" promptText="Nom " />
+                  <Label layoutX="22.0" layoutY="88.0" text="Prix : " />
+                  <Label layoutX="23.0" layoutY="124.0" text="Quantité : " />
+                  <Label layoutX="23.0" layoutY="169.0" text="Description : " />
+                  <TextField fx:id="pPrice" layoutX="141.0" layoutY="84.0" prefHeight="25.0" prefWidth="111.0" promptText="0 0 0 0 FCFA" />
+                  <TextField fx:id="pQuantity" layoutX="141.0" layoutY="120.0" prefHeight="25.0" prefWidth="111.0" promptText="00" />
+                  <TextArea fx:id="pDescription" layoutX="118.0" layoutY="169.0" prefHeight="130.0" prefWidth="231.0" promptText="MyCos" />
+                  <ImageView fx:id="pImage" fitHeight="150.0" fitWidth="200.0" layoutX="371.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="426.0" layoutY="193.0" mnemonicParsing="false" onAction="#ChangeImage" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: black;" text="Image" textFill="WHITE" />
+                  <Button layoutX="92.0" layoutY="319.0" mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: black;" text="Fermer" textFill="WHITE" />
+                  <Button layoutX="371.0" layoutY="319.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: black;" text="Ajouter" textFill="#f8f7f7" />
+                  <TextFlow layoutX="371.0" layoutY="236.0" prefHeight="68.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="error" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                  </TextFlow>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

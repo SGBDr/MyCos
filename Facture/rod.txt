@@ -1,0 +1,7 @@
+	 	 	 Facture a l'attention de Msr/Mme rod
+	 ACHAT DE : 
+	 - Rose Bonbon Quantité : 5 Prix Unitaire : 1000 FCFA
+--------------------------------------------------------------------------------------------
+	 - Dindo Quantité : 2 Prix Unitaire : 2000 FCFA
+--------------------------------------------------------------------------------------------
+				 Prix Total A Payer : 9000 FCFA Remboursement 0 FCFA

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox fx:id="PView" alignment="TOP_CENTER" prefHeight="461.0" prefWidth="435.0" style="-fx-background-color: rgba(12, 15, 45, 1);" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="461.0" prefWidth="851.0" style="-fx-background-color: rgba(12, 15, 45, 0.8);" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Des Produits en Stock">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <ScrollPane opacity="0.35" prefHeight="330.0" prefWidth="563.0" style="-fx-background-color: transparent;">
+               <content>
+                  <VBox fx:id="PList" alignment="TOP_CENTER" prefHeight="433.0" prefWidth="555.0" spacing="10.0" style="-fx-background-color: rgba(0,0,0,0.5);">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Button mnemonicParsing="false" style="-fx-background-color: black; -fx-text-fill: white; -fx-opacity: 1;" onAction="#AddProducts" text="Ajouter Un Produit">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,11 @@
+#bg{
+	-fx-background-image : url('../images/bg.jfif');
+	-fx-background-size: 100% 100%;
+}
+
+#profil{
+	-fx-border-radius : 10px;
+	-fx-border-width : 3px;
+	-fx-border-color : black;
+	-fx-cursor: hand;
+}

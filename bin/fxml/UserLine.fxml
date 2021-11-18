@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: rgba(12, 15, 45, 0.8);" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="650.0" spacing="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="user" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
+      <Text fx:id="state" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <Button mnemonicParsing="false" onAction="#ModifyUser" text="Modifier" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button mnemonicParsing="false" onAction="#DeleteUser" text="Supprimer" style="-fx-background-color: black;" textFill="WHITE" />
+   </children>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</HBox>

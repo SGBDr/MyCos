@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="406.0" prefWidth="764.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button layoutX="416.0" layoutY="342.0" mnemonicParsing="false" onAction="#AddUser" style="-fx-background-color: black;" text="Ajouter Un Utilisateur" textFill="WHITE" />
+      <ScrollPane layoutX="8.0" layoutY="14.0" prefHeight="291.0" prefWidth="694.0" style="-fx-background-color: transparent;">
+         <content>
+            <VBox fx:id="users" alignment="CENTER" prefHeight="289.0" prefWidth="667.0" spacing="5.0" style="-fx-background-color: transparent;"/>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

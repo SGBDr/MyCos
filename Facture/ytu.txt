@@ -1,0 +1,5 @@
+	 	 	 Facture a l'attention de Msr/Mme ytu
+	 ACHAT DE : 
+	 - Dindo Quantité : 5 Prix Unitaire : 2000 FCFA
+--------------------------------------------------------------------------------------------
+				 Prix Total A Payer : 10000 FCFA Remboursement 0 FCFA
